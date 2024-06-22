@@ -13,8 +13,8 @@ permissions:
   contents: read
 
 jobs:
+  Running it on ubuntu-latest
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -39,9 +39,3 @@ jobs:
       run: |
         export FLASK_APP=app
         export FLASK_ENV=development
-        echo '$FLASK_APP & $FLASK_ENV'
-    - name: Check variables
-      run: |
-        if [ $FLASK_APP = "app" ]; then echo "[LOGGING] Everything is ok with the FLASK_APP variable"; else echo "[ERROR] Something is wrong with FLASK_APP variable"; fi
-        if [ $FLASK_ENV = "environment" ]; then echo "[LOGGING] Everything is ok with the FLASK_ENV variable"; else echo "[ERROR] Something is wrong with FLASK_ENV variable"; fi
-    
