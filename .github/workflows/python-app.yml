@@ -13,7 +13,6 @@ permissions:
   contents: read
 
 jobs:
-  Running it on ubuntu-latest
   build:
     runs-on: ubuntu-latest
 
